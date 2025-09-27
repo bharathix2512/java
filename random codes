@@ -23,4 +23,216 @@ public class Main{
 }
 
 
-2.
+2.finding second smallest
+import java.util.Scanner;
+
+public class SecondSmallest {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int secondSmallest;
+        if ((a > b && a < c) || (a > c && a < b)) {
+            secondSmallest = a;
+        } else if ((b > a && b < c) || (b > c && b < a)) {
+            secondSmallest = b;
+        } else {
+            secondSmallest = c;
+        }
+        System.out.println(secondSmallest);
+
+        sc.close();
+    }
+}
+
+
+
+3.leap yr or not
+import java.util.Scanner;
+
+public class LeapYear {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int year = sc.nextInt();  // input year
+        
+        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
+            System.out.println("YES");  // leap year
+        } else {
+            System.out.println("NO");   // not a leap year
+        }
+        
+        sc.close();
+    }
+}
+
+4.grade calculation:
+import java.util.Scanner;
+
+public class GradeCalculator {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter marks for five subjects:");
+        int mark1 = scanner.nextInt();
+        int mark2 = scanner.nextInt();
+        int mark3 = scanner.nextInt();
+        int mark4 = scanner.nextInt();
+        int mark5 = scanner.nextInt();
+        double average = (mark1 + mark2 + mark3 + mark4 + mark5) / 5.0;
+        char grade;
+        if (average >= 90) {
+            grade = 'A';
+        } else if (average >= 80) {
+            grade = 'B';
+        } else if (average >= 70) {
+            grade = 'C';
+        } else if (average >= 50) {
+            grade = 'D';
+        } else {
+            grade = 'F';
+        }
+        System.out.println(grade)
+        scanner.close();
+    }
+}
+
+
+
+
+5.palindrome
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();
+
+        // Reverse the number
+        int original = num;
+        int reversed = 0;
+
+        while (num > 0) {
+            int digit = num % 10;  // get last digit
+            reversed = reversed * 10 + digit; 
+            num = num / 10;       // remove last digit
+        }
+
+        // Check if palindrome
+        if (original == reversed) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
+    }
+}
+
+
+
+
+6.for diamond pattern
+import java.util.Scanner;
+
+public class DiamondPattern {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j < n; j++) System.out.print("  ");
+            for (int j = 1; j <= 2 * i - 1; j++) System.out.print("* ");
+            System.out.println();
+        }
+        for (int i = n - 1; i >= 1; i--) {
+            for (int j = i; j < n; j++) System.out.print("  ");
+            for (int j = 1; j <= 2 * i - 1; j++) System.out.print("* ");
+            System.out.println();
+        }
+    }
+}
+
+
+
+
+7.for s pattern
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    int n = s.nextInt();
+	    
+	    for(int i = 1;i<=n;i++)
+	    {
+	        for(int j = 1;j<=n;j++){ 
+	        if(i==1||i==n||i==(n/2)+1||j==1&&i<=(n/2)+1||j==n&&i>=(n/2)+1)
+	        System.out.print("* ");
+	        else
+	        System.out.print("  ");
+	    }
+	    
+		System.out.println();
+	}
+	}
+}
+
+
+coding for S
+
+
+
+
+
+
+8.import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    int n = s.nextInt();
+	    
+	    for(int i = 1;i<=n;i++)
+	    {
+	        for(int j = 1;j<=n;j++){ 
+	        if(j==1||j==n||i==j&&i<=(n/2)+1||i+j==n+1&&i<=(n/2)+1)
+	        System.out.print("* ");
+	        else
+	        System.out.print("  ");
+	    }
+	    
+		System.out.println();
+	}
+	}
+}
+
+coding for M
+
+
+
+
+
+
+9.import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    int n  = s.nextInt();
+	    int sum = 0;
+	    int a[]= new int[n];
+	    for(int i =0;i<n;i++){
+	        a[i] = s.nextInt();
+	        sum = sum+a[i];
+	    }
+	    
+	   
+		System.out.println(sum);
+	}
+	
+}
+
+sum of array elements
+
