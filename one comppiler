@@ -1,0 +1,379 @@
+ 1.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+      int a=s.nextInt();
+      int b=s.nextInt();
+      if(a<b){
+        System.out.println(b);
+        
+      }
+      else{
+        System.out.println(a);
+      }
+        
+      
+  }
+}
+
+
+2.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+      int a = s.nextInt();
+      if(a>0){
+        System.out.println("POSITIVE");
+      }
+      else if(a<0){
+        System.out.println("NEGATIVE");
+      }
+      else{
+        System.out.println("ZERO");
+      }
+  }
+}
+
+
+
+3..import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+      int a=s.nextInt();
+      if(a%2==0){
+        System.out.println("EVEN");
+      }
+      else{
+        System.out.println("ODD");
+      }
+  }
+}
+
+
+4.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+      int a = s.nextInt();
+      if(a%3==0 || a%5==0){
+        System.out.println("YES");
+      }
+      else{
+        System.out.println("NO");
+      }
+  }
+}
+
+
+5.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      
+      Scanner s=new Scanner(System.in);
+      int a = s.nextInt();
+      if (a<0){
+        System.out.println(a*-1);
+      }
+      else {
+        System.out.println(a);
+      }
+  }
+}
+
+
+6.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+     Scanner s=new Scanner(System.in);
+      int a = s.nextInt();
+      int b=s.nextInt();
+      int c=s.nextInt();
+      if(a>b&&a>c){
+        System.out.println(+a);
+      }
+      else if(b>a&&b>c){
+        System.out.println(+b);
+      }
+      else{
+        System.out.println(+c);
+      }
+  }
+}
+
+
+7.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+      
+            int a=s.nextInt();
+            int b=s.nextInt();
+      int c=s.nextInt();
+      int d=s.nextInt();
+    
+
+
+      if (a>b){
+        if(a>c){
+          if (a>d)
+          System.out.println(a);
+          else
+            System.out.println(d);
+        }
+        else
+          System.out.println(c);
+      }
+      else if (b>c){
+        if (b>d)
+          System.out.println(b);
+        else
+          System.out.println(d);
+      }
+      else if (c>d){
+        System.out.println(c);
+      }
+      else
+        System.out.println(d);
+  }
+}
+  
+8.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+           int a=s.nextInt();
+            int b=s.nextInt();
+      int c=s.nextInt();
+      if(a>b&&a<c){
+        System.out.println(a);
+      }
+      else if(b>a&&b<c){
+        System.out.println(b);
+          
+        }
+        
+        
+        else{
+          System.out.println(c);
+
+        }
+      
+      
+      
+  }
+}
+
+9.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+      int a=s.nextInt();
+      int b=s.nextInt();
+      int c=s.nextInt();
+    if(a+b+c==180 && a>0&&b>0&&c>0){
+         System.out.println("VALID");
+       
+      if(a==b && b==c){
+        System.out.println("EQUILATERAL");
+      }
+      else if(a==b||b==c||a==c){
+        System.out.println("ISOSCELES");
+      }
+      else{
+        System.out.println("SCALENE");
+      }
+    }
+  else{
+    System.out.println("NOT VALID");
+  }
+}
+}
+
+
+10.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+      int a=s.nextInt();
+      if(a>=1000&&a<=9999){
+        if(a%4==0){
+          System.out.println("YES");
+        }
+        else{
+          System.out.println("NO");
+        }
+      }
+      
+  }
+}
+
+
+
+11.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner (System.in);
+      int n=s.nextInt();
+      int d=n;
+      int r=0;
+      while(n!=0){
+        int digit=n%10;
+        r=r*10+digit;
+        n/=10;
+        
+      }
+      if(r==d){
+        System.out.println("YES");
+      }
+      else{
+        System.out.println("NO");
+      }
+  }
+}
+
+
+
+12.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+     Scanner s=new Scanner(System.in);
+     int a=s.nextInt();
+     switch(a){
+       case 0:
+         System.out.println("Sunday");
+         break;
+       case 1:
+         System.out.println("Monday");
+         break;
+        case 2:
+          System.out.println("Tuesday");
+          break;
+          case 3:
+          System.out.println("Wednesday");
+          break;
+          case 4:
+            System.out.println("Thursday");
+            break;
+            case 5:
+              System.out.println("Friday");
+              break;
+              case 6:
+                System.out.println("Saturday");
+                break;
+                default:
+                System.out.println("INVALID ");
+      
+     }
+  }
+}
+
+
+
+13.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+     Scanner s=new Scanner (System.in);
+     int a =s.nextInt();
+     int b =s.nextInt();
+     int c =s.nextInt();
+     int d =s.nextInt();
+     int e =s.nextInt();
+     double tot=a+b+c+d+e;
+     double avg=tot/5;
+     if(avg>=90){
+       System.out.println("A");
+     }
+     else if(avg>=80&&avg<90){
+       System.out.println("B");
+       
+     }
+     else if(avg>=70&&avg<80){
+       System.out.println("C");
+       
+     }
+      else if(avg>=50&&avg<70){
+        System.out.println("D");
+        
+      }
+      else{
+        System.out.println("F");
+      }
+  }
+}
+
+14.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner (System.in);
+      int a =s.nextInt();
+      
+        if(a%5==0&&a%3==0){
+          System.out.println("HelloWorld");
+          
+        }
+        else if(a%5==0){
+          System.out.println("World");
+        }
+        else if(a%3==0){
+          System.out.println("Hello");
+        }
+        else
+        System.out.println(a);
+      
+      }
+      
+
+}
+15.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner (System.in);
+      int a =s.nextInt();
+      if(a%3==0 && a%5==0){
+        System.out.println("HelloWorld");
+      }
+      else if(a%5==0&&a!=0){
+        System.out.println("World");
+      }
+      else if(a%3==0&&a!=0){
+        System.out.println("Hello");
+      }
+      
+  }
+}
+
+16.import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner (System.in);
+      int a =s.nextInt();
+      switch(a%2){
+        case 0 :
+          System.out.println("EVEN");
+          break;
+          case 1:
+            System.out.println("ODD");
+          
+        
+        
+          
+      }
+  }
+}
