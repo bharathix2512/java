@@ -377,3 +377,44 @@ public class Main {
       }
   }
 }
+
+
+
+
+
+
+
+17.elecric bill.
+
+
+import java.util.*;
+public class Bill {
+    public static double Bill(int units) {
+        double total = 0;
+        if (units <= 50) {
+            total = units * 1;
+        } 
+        else if (units <= 150) {
+            total = 50 * 1 + (units - 50) * 2;
+        } 
+        else if (units <= 250) {
+            total = 50 * 1 + 100 * 2 + (units - 150) * 3;
+        }
+        else {
+            total = 50 * 1 + 100 * 2 + 100 * 3 + (units - 250) * 4;
+        }
+        if (total > 150) {
+            total += total * 0.20;
+        }
+        return total;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter electricity in units: ");
+        int units = sc.nextInt();
+        double total = Bill(units);
+        System.out.println("Total electricity bill: " + total);
+
+        sc.close();
+    }
+}
