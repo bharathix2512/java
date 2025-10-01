@@ -152,3 +152,38 @@ public class Main {
       System.out.println(lcm);
   }
 }
+
+
+
+
+
+
+7.armstrong number 
+
+
+  (   abc=a^l+b^l+c^l...
+l--->length of the integer.  )
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+     Scanner s=new Scanner(System.in);
+     int a=s.nextInt();
+     int length=String.valueOf(a).length();  //finding the length of the integer.
+     int temp=a;   //storing it in dummy var 
+     int sum=0;
+     while(temp>0){
+       int lastdigit=temp%10;   //getting last digit.
+       sum+=Math.pow(lastdigit,length);  //calculating every digit with length of it in a reverse manner
+       temp=temp/10;                       // removing last digit .
+     }
+     if(sum==a){
+       System.out.println("YES");
+     }
+     else{
+       System.out.println("NO");
+     }
+  }
+}
