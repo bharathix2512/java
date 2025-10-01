@@ -267,4 +267,27 @@ class Main {
 
 
 
+11.finding hcf and lcm 
 
+import java.util.*;
+
+public class Main {
+    public static int findHCF(int a,int b){
+      while(b!=0){
+        int temp=b;
+        b=a%b;
+        a=temp;
+      }
+      return a;
+    }
+    public static void main(String[] args) {
+      
+      Scanner s=new Scanner(System.in);
+      int a=s.nextInt();
+      int b=s.nextInt();
+      int c=findHCF(a,b);
+      System.out.println(c);
+      int lcm=a*b/c;
+      System.out.println(lcm);
+  }
+}
