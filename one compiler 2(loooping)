@@ -76,9 +76,9 @@ import java.util.*;
 
     
       public static boolean isPrime(int n){
-        if(n<=1){
+        if(n<=1){ //FOR AVOIDING 0 AND 1 
           return false;}
-          for(int i=2;i<=Math.sqrt(n);i++){
+          for(int i=2;i<=Math.sqrt(n);i++){ //TO SMALL POSSIBLE PRIME TO SQUARE ROOT OF NUMBER TO AVOID OVER CALCULATION.
             if(n%i==0){
               return false;
             }
@@ -91,7 +91,7 @@ import java.util.*;
       int a =s.nextInt();
       int b=s.nextInt();
       for(int i=a;i<=b;i++){
-        if(i!=a&&isPrime(i)){
+        if(i!=a&&isPrime(i)){ 
           System.out.println(i);
         }
       }
