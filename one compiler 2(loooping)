@@ -98,3 +98,31 @@ import java.util.*;
       }
       
 }
+
+
+
+5.no of zeros in an integer
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+      int c=0;
+      int a=s.nextInt();
+      
+        
+        String sr=Integer.toString(a);  //converting int to string 
+        for(int i=0;i<sr.length();i++){ //  iteration must start with 0 
+          if(sr.charAt(i) =='0'){    //charAt to check each 
+            c++;
+           
+          }
+          
+          
+        
+      }
+      System.out.println(c);
+      
+     
+  }
+}
