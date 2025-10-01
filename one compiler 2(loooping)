@@ -228,3 +228,52 @@ public class Main {
      }
   }
 }
+
+
+
+
+
+
+
+
+
+9.Take an integer input and print 'YES' if the integer is a mars number, else print 'NO'.
+
+Hint:
+A mars number is a number if the sum of its digits can be reduced to single digit in even number of steps.
+Example:
+199 => 19 => 10 => 1
+Number of steps = 3
+Hence the number is not a mars number.
+
+
+
+
+code--->>>
+
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+     Scanner s=new Scanner (System.in);
+     int a =s.nextInt();
+     int sum=0;
+     int c=0;
+     int temp=a;
+     while(temp>0){
+       int d=temp%10;
+       sum+=d;    //SUMING THE DIGITS.
+       temp/=10;
+       c++;       //COUNTING HOW MANY STEPS IT TAKES 
+       
+     }
+     if(c%2==0){
+       System.out.println("YES");
+     }
+     else{
+       System.out.println("NO");
+     }
+  }
+}
